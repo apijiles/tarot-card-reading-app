@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.btn {
+  background-color: #282c34;
+  margin: 15px;
+  padding: 5px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+}
+
+.card-img-container {
+  grid-column-start: 0;
+  grid-column-end: 0;
+}
+.card-img {
+  height: 200px;
+  width: 100px;
+}
+.card-img-reversed {
+  height: 200px;
+  width: 100px;
+  transform: scaleY(-1) scaleX(-1);
+}
+.card-sub-container {
+  grid-column-start: 0;
+  grid-column-end: 0;
+}
+
+.card-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-meaning {
+  font-size: 12px;
+}
+.card-name-points {
+  font-weight: bold;
+}
+.home-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.reading-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.spread-btn {
+  margin-top: 1rem;
+}
+
+.pick-heading {
+  margin-bottom: 1rem;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
